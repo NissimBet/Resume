@@ -1,0 +1,125 @@
+html {
+  height: 100vh; }
+
+body {
+  font-size: 16px;
+  height: 100%;
+  padding: 30px 0 0 0;
+  margin: 0 50px;
+  box-sizing: border-box; }
+  body * {
+    font-family: Cambria, Verdana, sans-serif;
+    color: #2f2f2f;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  body a {
+    text-decoration: none; }
+  body > * {
+    max-width: 1300px;
+    margin: 0 auto; }
+
+header, #main-data {
+  display: flex;
+  flex-direction: row; }
+
+#main-data {
+  margin-top: 65px; }
+
+.data-left {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 3; }
+
+.data-right {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+
+.center-h {
+  text-align: center;
+  margin: 0 auto; }
+
+.center-v {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.section-header {
+  margin: 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #9ee493; }
+
+.section-content {
+  margin-left: 30px;
+  margin-bottom: 15px; }
+  .section-content ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    list-style-position: inside; }
+
+.networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0; }
+  .networks span {
+    margin-left: 20px; }
+  .networks a {
+    margin-left: 15px;
+    color: #336699; }
+    .networks a img {
+      margin-right: 7px; }
+    .networks a:hover {
+      color: #86bbd8; }
+
+.media-icon {
+  height: 20px;
+  width: 20px; }
+
+.contact-data {
+  margin: 10px 0; }
+
+.phone-num, .mail-address {
+  font-weight: bold;
+  color: #336699; }
+
+.date-format {
+  font-style: italic;
+  color: #336699;
+  text-transform: uppercase; }
+
+ul.bubbles > li {
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 4px 5px;
+  background-color: #daf7dc;
+  border: 1px solid #9ee493;
+  border-radius: 15px;
+  text-align: center; }
+
+.bubbles {
+  margin: 0;
+  list-style: none; }
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain; }
+
+.flex-center {
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (max-width: 64em) {
+  #main-data {
+    flex-direction: column; }
+  .data-left, .data-right {
+    margin: 0; } }
+
+@media screen and (max-width: 46em) {
+  header {
+    flex-direction: column; } }

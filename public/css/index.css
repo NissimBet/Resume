@@ -1,14 +1,19 @@
+@font-face {
+  font-family: 'Swansea';
+  src: url("../public/media/fonts/swansea-font/Swansea.ttf"), url("../public/media/fonts/swansea-font/Swansea-Bold.ttf"), url("../public/media/fonts/swansea-font/Swansea-BoldItalic.ttf"), url("../public/media/fonts/swansea-font/Swansea-Italic.ttf"); }
+
 html {
   height: 100vh; }
 
 body {
-  font-size: 16px;
+  font-size: 15px;
   height: 100%;
   padding: 30px 0 0 0;
   margin: 0 50px;
+  line-height: 22.5px;
   box-sizing: border-box; }
   body * {
-    font-family: Cambria, Verdana, sans-serif;
+    font-family: Swansea, Verdana, sans-serif;
     color: #2f2f2f;
     padding: 0;
     margin: 0;
@@ -24,7 +29,8 @@ header, #main-data {
   flex-direction: row; }
 
 #main-data {
-  margin-top: 65px; }
+  margin-top: 65px;
+  margin-bottom: 30px; }
 
 .data-left {
   margin-right: 20px;
@@ -59,6 +65,9 @@ header, #main-data {
     margin-top: 5px;
     margin-left: 20px;
     list-style-position: inside; }
+  .section-content .bubbles {
+    margin: 0;
+    list-style: none; }
 
 .networks {
   display: flex;
@@ -79,10 +88,10 @@ header, #main-data {
   height: 20px;
   width: 20px; }
 
-.contact-data {
+.contact-info {
   margin: 10px 0; }
 
-.phone-num, .mail-address {
+.contact-data {
   font-weight: bold;
   color: #336699; }
 
@@ -100,10 +109,6 @@ ul.bubbles > li {
   border: 1px solid #9ee493;
   border-radius: 15px;
   text-align: center; }
-
-.bubbles {
-  margin: 0;
-  list-style: none; }
 
 .profile-img {
   width: 50px;

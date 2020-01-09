@@ -1,5 +1,13 @@
-$base-font-size: 16px;
-$base-font-family: Cambria, Verdana, sans-serif;
+@font-face {
+  font-family: 'Swansea';
+  src: url('../public/media/fonts/swansea-font/Swansea.ttf'), 
+      url('../public/media/fonts/swansea-font/Swansea-Bold.ttf'), 
+      url('../public/media/fonts/swansea-font/Swansea-BoldItalic.ttf'), 
+      url('../public/media/fonts/swansea-font/Swansea-Italic.ttf');
+}
+
+$base-font-size: 15px;
+$base-font-family: Swansea, Verdana, sans-serif;
 
 $primary-font-color: #2f2f2f;
 $secondary-font-color: #336699;
@@ -21,6 +29,7 @@ body {
   height: 100%;
   padding: 30px 0 0 0;
   margin: 0 50px;
+  line-height: 1.5 * $base-font-size;
   box-sizing: border-box;
   
   & * {
@@ -50,6 +59,7 @@ header, #main-data {
 
 #main-data {
   margin-top: 65px;
+  margin-bottom: 30px;
 }
 .data-left {
   margin-right: 20px;
@@ -90,6 +100,10 @@ header, #main-data {
     margin-left: $tabsize; 
     list-style-position: inside;
   }
+  .bubbles {
+    margin: 0;
+    list-style: none;
+  }
 }
 
 .networks {
@@ -118,11 +132,11 @@ header, #main-data {
   width: 20px;
 }
 
-.contact-data {
+.contact-info {
   margin: 10px 0;
 }
 
-.phone-num, .mail-address {
+.contact-data {
   font-weight: bold;
   color: $secondary-font-color
 }
@@ -142,10 +156,6 @@ ul.bubbles > li {
   text-align: center;
 }
 
-.bubbles {
-  margin: 0;
-  list-style: none;
-}
 
 .profile-img {
   width: 50px;
